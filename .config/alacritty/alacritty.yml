@@ -1,0 +1,50 @@
+# Alacritty config
+
+selection:
+  # This string contains all characters that are used as separators for
+  # "semantic words" in Alacritty.
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: true
+
+font:
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+  italic:
+    family: Hack Nerd Font
+    style: Italic
+  bold_italic:
+    family: Hack Nerd Font
+    style: Bold Italic
+  size: 12.0
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+# Allow terminal applications to change Alacritty’s window title.
+window.dynamic_title: true
+
+mouse:
+  hints:
+    launcher:
+      program: open
+    modifiers: Command
+
+decorations: buttonless
+
+window:
+  padding:
+    x: 2
+    y: 2
+  dimensions:
+    # columns: 200
+    # lines: 60
+    columns: 0
+    lines: 0
+  startup_mode: Maximized
+
+import:
+ - ~/.config/alacritty/themes/themes/doom_one.yaml
